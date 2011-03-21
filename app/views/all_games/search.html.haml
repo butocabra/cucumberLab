@@ -1,2 +1,9 @@
-%h1 AllGames#search
-%p Find me in app/views/all_games/search.html.haml
+%h1 All Games
+%form{:method => "get" }
+  %input#q{:type => "text", :value =>"#{params[:q]}||=""
+  %input{:type => "submit", :value => "search" } 
+- if @games
+  - @games.each do |game|
+    %p Title : #{game.title}
+  %p=@searchSummary
+%p=@message

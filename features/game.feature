@@ -13,7 +13,8 @@ Feature: Games Objects
 	Given there are 5 games that exist with a title containing "asdf"
 	And there are 10 games without "asdf"
 	When I go to the game search page
-	And I search for "asdf"
+	And I fill in "q" with "asdf" 
+	And I press "search"
 	Then I should see "asdf" within "search results"
 	And I should see "5 results"
 
