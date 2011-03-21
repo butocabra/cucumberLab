@@ -7,6 +7,9 @@ gem 'rails', '3.0.5.rc1'
 
 gem 'sqlite3'
 
+
+gem 'haml'
+gem 'haml-rails'
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -29,3 +32,19 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+group :test, :development do
+	gem 'rspec-rails', '>= 2.0.0.rc'
+end
+
+group :cucumber do  
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'gherkin', '2.1.5'
+  gem 'cucumber-rails', '>= 0.3.2'
+  gem 'cucumber', '>=0.8.5'
+  gem 'rspec-rails', '>= 2.0.0.rc'
+  gem 'spork'
+  gem 'launchy'    # So you can do Then show me the page
+end  
+
