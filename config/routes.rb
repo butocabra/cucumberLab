@@ -1,5 +1,6 @@
 Gamelib::Application.routes.draw do
   get "all_games/browse"
+  get "all_games/search"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

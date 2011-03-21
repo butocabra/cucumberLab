@@ -20,6 +20,9 @@ module NavigationHelpers
     when /the list of all games/
 	'all_games/browse'
 
+    when /the game search page/
+	'all_games/search'
+
     else
       begin
         page_name =~ /the (.*) page/
