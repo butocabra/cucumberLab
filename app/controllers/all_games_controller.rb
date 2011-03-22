@@ -10,8 +10,6 @@ class AllGamesController < ApplicationController
       if ( @games.count > 0)
         @searchSummary = "found #{@games.count} games matching #{params[:q]}"
       end
-    else
-      @message = params[:q]
     end
   end
 

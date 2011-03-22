@@ -15,6 +15,7 @@ Feature: Games Objects
 	When I go to the game search page
 	And I fill in "q" with "asdf" 
 	And I press "search"
-	Then I should see "asdf" within "search results"
-	And I should see "5 results"
+	Then I should see "asdf" within "#resultsDiv"
+	And I should see "5 games"
+	
 
