@@ -34,7 +34,9 @@ gem 'haml-rails'
 # end
 
 group :test, :development do
-	gem 'rspec-rails', '>= 2.0.0.rc'
+  gem 'rspec-rails', '>= 2.0.0.rc'
+  gem "ZenTest", "~> 4.4.2"
+  gem "autotest-rails", "~> 4.1.0"
 end
 
 group :cucumber do  
