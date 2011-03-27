@@ -22,6 +22,9 @@ module NavigationHelpers
 
     when /the game search page/
 	'all_games/search'
+    
+    when /the add game page/
+	'my_games/new'
 
     else
       begin

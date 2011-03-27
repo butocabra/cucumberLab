@@ -23,7 +23,11 @@ Given /^there are (\d+) games without "([^"]*)"$/ do |count, without|
   makeNGames count.to_i, without.reverse
 end
 
-When /^I search for "([^"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Given /^no game exists with the title "([^"]*)"$/ do |title|
+  makeNGames 1, title.reverse 
+end
+
+Then /^a game with the title "([^"]*)" exists$/ do |title|
+  Game.where(:title=>title).exists?
 end
 

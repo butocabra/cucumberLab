@@ -1,4 +1,6 @@
 Gamelib::Application.routes.draw do
+  get "my_games/new"
+
   get "all_games/browse"
   get "all_games/search"
 

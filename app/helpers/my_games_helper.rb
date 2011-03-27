@@ -1,0 +1,2 @@
+module MyGamesHelper
+end
