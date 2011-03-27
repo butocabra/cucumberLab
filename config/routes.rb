@@ -1,8 +1,10 @@
 Gamelib::Application.routes.draw do
-  get "my_games/new"
-
-  get "all_games/browse"
-  get "all_games/search"
+  #get "my_games/new"
+  resources :my_games , :as => "games"
+  
+  resources :all_games, :only => [:index] do
+      get 'search', :on => :collection
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

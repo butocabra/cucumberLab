@@ -13,6 +13,11 @@ describe MyGamesController do
       get :new
       response.should render_template("new")
     end
+    
+    it "should pass a new game to the view" do
+      get :new
+      assigns(:game).should be_a_new(Game)
+    end
   end
 
 end

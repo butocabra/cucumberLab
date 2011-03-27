@@ -2,10 +2,10 @@ require 'spec_helper'
 
 describe AllGamesController do
   
-  describe "GET 'browse'" do
+  describe "GET 'index'" do
 
     it "should be successful" do
-      get 'browse'
+      get 'index'
       response.should be_success
     end
 
@@ -13,7 +13,7 @@ describe AllGamesController do
       game = mock_model(Game,:title => "game one title")
       games = [game]
       Game.should_receive(:all).and_return(games)
-      get 'browse'
+      get 'index'
       response.should render_template("browse")
     end
   end

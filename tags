@@ -77,6 +77,7 @@ about	public/index.html	/^      function about() {$/;"	f
 browse	app/controllers/all_games_controller.rb	/^  def browse$/;"	f	class:AllGamesController
 child.id	public/javascripts/dragdrop.js	/^        id: encodeURIComponent(match ? match[1] : null),$/;"	p
 clone	public/javascripts/prototype.js	/^  function clone(object) {$/;"	f
+create	app/controllers/my_games_controller.rb	/^  def create$/;"	f	class:MyGamesController
 down	db/migrate/20110320052651_create_games.rb	/^  def self.down$/;"	F	class:CreateGames
 drop	public/javascripts/dragdrop.js	/^    var drop, affected = [];$/;"	v
 droponOptions	public/javascripts/dragdrop.js	/^    var droponOptions = Sortable.options(dropon);$/;"	v

@@ -24,7 +24,7 @@ Feature: Games Objects
 	And I fill in "title" with "big new game"
 	And I fill in "description" with "description text" 
 	And I press "add"
-	Then I should see "game added"
+	Then I should see "was successfully created"
 	And a game with the title "big new game" exists
 	
 
