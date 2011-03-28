@@ -14,7 +14,7 @@ describe AllGamesController do
       games = [game]
       Game.should_receive(:all).and_return(games)
       get 'index'
-      response.should render_template("browse")
+      response.should render_template("index")
     end
   end
 

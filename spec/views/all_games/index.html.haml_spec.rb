@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "all_games/browse.html.haml"  do
+describe "all_games/index.html.haml"  do
 
   it "should render a list of games" do 
     game = mock_model(Game,:title => "the title")

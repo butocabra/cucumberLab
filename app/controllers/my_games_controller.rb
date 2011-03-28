@@ -7,9 +7,9 @@ class MyGamesController < ApplicationController
     @game = Game.new(params[:game])
 
     if @game.save
-      redirect_to(all_games_path, :notice => '%{@game.title} was successfully created.') 
+      redirect_to all_games_path, :notice => 'successfully created.' 
     else
-      render :action => "new" 
+      render :new
     end
   end
 

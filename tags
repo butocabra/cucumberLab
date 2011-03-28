@@ -74,7 +74,6 @@ Try.these	public/javascripts/prototype.js	/^  these: function() {$/;"	m
 Type	public/javascripts/prototype.js	/^  function Type(o) {$/;"	f
 WithinHelpers	features/step_definitions/web_steps.rb	/^module WithinHelpers$/;"	m
 about	public/index.html	/^      function about() {$/;"	f
-browse	app/controllers/all_games_controller.rb	/^  def browse$/;"	f	class:AllGamesController
 child.id	public/javascripts/dragdrop.js	/^        id: encodeURIComponent(match ? match[1] : null),$/;"	p
 clone	public/javascripts/prototype.js	/^  function clone(object) {$/;"	f
 create	app/controllers/my_games_controller.rb	/^  def create$/;"	f	class:MyGamesController
@@ -84,6 +83,7 @@ droponOptions	public/javascripts/dragdrop.js	/^    var droponOptions = Sortable.
 extend	public/javascripts/prototype.js	/^  function extend(destination, source) {$/;"	f
 function.handleMethod	public/javascripts/rails.js	/^  function handleMethod(element) {$/;"	f
 function.handleRemote	public/javascripts/rails.js	/^  function handleRemote(element) {$/;"	f
+index	app/controllers/all_games_controller.rb	/^  def index$/;"	f	class:AllGamesController
 inspect	public/javascripts/prototype.js	/^  function inspect(object) {$/;"	f
 isArray	public/javascripts/prototype.js	/^  function isArray(object) {$/;"	f
 isElement	public/javascripts/prototype.js	/^  function isElement(object) {$/;"	f

@@ -3,8 +3,7 @@ Feature: Games Objects
   identify a game as part of my inventory.
 
   Scenario: List all games
-	Given that I want to see a list of games that exist
-	And there are 10 games that exist
+	Given there are 10 games that exist
   	When I go to the list of all games
 	Then I should see "game1"
 	And I should see "game10"
@@ -24,7 +23,6 @@ Feature: Games Objects
 	And I fill in "title" with "big new game"
 	And I fill in "description" with "description text" 
 	And I press "add"
-	Then I should see "was successfully created"
-	And a game with the title "big new game" exists
+	Then a game with the title "big new game" exists
 	
 

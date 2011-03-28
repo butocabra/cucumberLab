@@ -1,9 +1,4 @@
 
-
-Given /^that I want to see a list of games that exist$/ do
-end
-
-
 def makeNGames( n = 1, prefix = "game" )
   n.times do |x| 
     Game.create!(:title => prefix + (x + 1).to_s)
