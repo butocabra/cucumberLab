@@ -1,4 +1,10 @@
 Gamelib::Application.routes.draw do
+  
+  #get "welcome/login"
+
+  #root :to => "welcome#index", :as => :homepage
+  match 'login' => "welcome#login", :as => :login
+
   #get "my_games/new"
   resources :my_games , :as => "games"
   

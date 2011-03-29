@@ -26,6 +26,9 @@ module NavigationHelpers
     when /the add game page/
 	'my_games/new'
 
+    when /go to the login page/
+        login_url 
+
     else
       begin
         page_name =~ /the (.*) page/
