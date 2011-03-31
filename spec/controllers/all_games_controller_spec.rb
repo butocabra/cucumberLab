@@ -20,7 +20,7 @@ describe AllGamesController do
 
   describe "Get 'search'" do
     it "should search for a term" do
-      Game.should_receive(:where).once.and_return [ mock_model(Game,:title=>"title") ]
+      Game.should_receive(:search).once.and_return [ mock_model(Game,:title=>"title") ]
       get 'search', { :q => "title" }
     end
   end
