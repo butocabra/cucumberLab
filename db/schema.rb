@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110320052651) do
+ActiveRecord::Schema.define(:version => 20110331035805) do
 
   create_table "games", :force => true do |t|
     t.string   "title"
@@ -18,6 +18,15 @@ ActiveRecord::Schema.define(:version => 20110320052651) do
     t.text     "description"
     t.date     "published"
     t.string   "platform"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

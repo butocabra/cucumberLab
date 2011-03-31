@@ -10,6 +10,9 @@ gem 'sqlite3'
 
 gem 'haml'
 gem 'haml-rails'
+
+gem 'bcrypt-ruby', :require => 'bcrypt'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
