@@ -1,25 +1,28 @@
 require 'spec_helper'
 
-describe "welcome/login.html.haml" do
+describe "welcome/join.html.haml" do
 
-  it "should have a login button" do
-    render
-    rendered.should contain /login/i
-  end
+  context "with an empty user" do
 
-  it "should have a field for username" do
-    render
-    rendered.should contain /username/i
-  end
+    before (:each) do
+      user = stub_model(User)
+      assign(:user, user)
+    end
 
-  it "should have a field for email" do
-    render
-    rendered.should contain /email/i
-  end
+    it "should have a join button" do
+      render
+      rendered.should contain /join/i
+    end
 
-  it "should have a field for password" do
-    render
-    rendered.should contain /password/i
+    it "should have a field for email" do
+      render
+      rendered.should contain /email/i
+    end
+
+    it "should have a field for password" do
+      render
+      rendered.should contain /password/i
+    end
   end
 
 end
