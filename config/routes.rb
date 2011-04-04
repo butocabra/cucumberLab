@@ -2,18 +2,19 @@ Gamelib::Application.routes.draw do
   
   #get "welcome/login"
 
-  #root :to => "welcome#index", :as => :homepage
-  get 'login' => "welcome#login", :as => :login
-  get 'join' => "welcome#join", :as => :join
-  post 'join' => "welcome#create", :as => :create_user
+ 
+  get 'join' => 'welcome#join'
+  get 'login' => 'welcom#login'
 
-  #get "my_games/new"
-  root :to => "my_games#index"
   resources :my_games , :as => "games"
   
   resources :all_games, :only => [:index] do
-      get 'search', :on => :collection
+    collection do
+      get 'search'
+    end
   end
+
+  root :to => "welcome#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
