@@ -4,8 +4,9 @@ Gamelib::Application.routes.draw do
 
  
   get 'join' => 'welcome#join'
-  get 'login' => 'welcome#login'
   post 'join' => 'welcome#create' , :as => "create_user"
+
+  match 'login' => 'welcome#login', :as => "log_in"
  
   resources :my_games , :as => "games"
   
