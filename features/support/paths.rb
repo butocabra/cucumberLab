@@ -26,8 +26,14 @@ module NavigationHelpers
     when /the add game page/
 	'my_games/new'
 
-    when /go to the login page/
-        login_url 
+    when /the login page/
+        log_in_url 
+
+    when /the signup page/
+        join_url 
+
+    when /the asdf search page/
+        'all_games/search?q=asdf'
 
     else
       begin

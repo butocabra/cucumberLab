@@ -5,10 +5,10 @@ Feature: User Account
   Scenario: SignUp
     Given I am on the signup page
     And I fill in the following:
-    | email | foo@bar.com |
-    | password | password |
-    | confirmPassword | password |
-    When I press "sign up"
+    | user_email | foo@bar.com |
+    | user_password | password |
+    | user_password_confirmation | password |
+    When I press "Join"
     Then a user with the email "foo@bar.com" will exist
 
   Scenario: Login

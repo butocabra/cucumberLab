@@ -1,4 +1,4 @@
-Feature: Games Objects
+Feature: Games
   In order to track games I should be able to create, edit, search for, and
   identify a game as part of my inventory.
 

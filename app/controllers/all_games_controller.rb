@@ -6,7 +6,7 @@ class AllGamesController < ApplicationController
 
   def search
     if params[:q]
-      @games = Game.search(:q)
+      @games = Game.search(params[:q])
       if ( @games.count > 0)
         @searchSummary = "found #{@games.count} games matching #{params[:q]}"
       end

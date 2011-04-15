@@ -23,6 +23,6 @@ Given /^no game exists with the title "([^"]*)"$/ do |title|
 end
 
 Then /^a game with the title "([^"]*)" exists$/ do |title|
-  Game.where(:title=>title).exists?
+  Game.find_by_title(title).should_not == nil
 end
 
