@@ -1,4 +1,8 @@
 class User < ActiveRecord::Base
+
+  has_many :gamecopies
+  has_many :games, :through => :gamecopies 
+ 
   attr_accessor :password  
   
   before_save :encrypt_password

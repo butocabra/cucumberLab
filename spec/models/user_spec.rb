@@ -16,4 +16,8 @@ describe User do
     u.password.should be_nil
   end
 
+  it "should have a way to get a list of games the user has" do
+    pending "make this work"
+  end
+
 end

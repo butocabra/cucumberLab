@@ -18,7 +18,7 @@ module NavigationHelpers
     #     user_profile_path(User.find_by_login($1))
 
     when /the list of all games/
-	'all_games/'
+	'/all_games'
 
     when /the game search page/
 	'all_games/search'
@@ -28,9 +28,15 @@ module NavigationHelpers
 
     when /the login page/
         log_in_url 
+    
+    when /the logout page/
+        log_out_url 
 
     when /the signup page/
         join_url 
+
+    when /my list of games/
+        games_url
 
     when /the asdf search page/
         'all_games/search?q=asdf'

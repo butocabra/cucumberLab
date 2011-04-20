@@ -9,20 +9,22 @@ Feature: User Account
     | user_password | password |
     | user_password_confirmation | password |
     When I press "Join"
-    Then a user with the email "foo@bar.com" will exist
+    Then I should see "you have been signed up"
+    And I should be on the list of all games 
 
   Scenario: Login
     Given that I am not logged in
+    And I have one user with email "foo@bar.com" with password "password"
     When I go to the login page
     And I fill in the following:
     | email | foo@bar.com |
     | password | password |
     And I press "login"
-    Then I should be logged in
-    And I should be on my list of games 
+    Then I should see "logged in as foo@bar.com"
+    And I should be on the list of all games 
 
   Scenario: Logout
-    Given that I am logged in
+    Given that I am logged in as "foo@bar.com" with password "password"
     And I am on my list of games
     When I press "logout"
     Then I should not be logged in

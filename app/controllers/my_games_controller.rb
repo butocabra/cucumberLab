@@ -13,5 +13,7 @@ class MyGamesController < ApplicationController
     end
   end
 
+  
+
 
 end
